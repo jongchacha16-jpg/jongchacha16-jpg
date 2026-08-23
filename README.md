@@ -1,6 +1,7 @@
 ### 안녕하세요, 데이터 분석/ML을 공부하고 있는 박찬종입니다.
 
 -  **포트폴리오**: [python-data-portfolio](https://github.com/jongchacha16-jpg/python-data-portfolio) — 데이터 직무 연봉 예측, 뇌졸중 발병 예측, 와인 품질 회귀분석 등
+-  MongoDB/Elastic search로 서버도 함께 학습 중입니다.
 -  Flutter/Dart로 모바일 앱 개발도 함께 학습 중입니다.
 
 **Skills**: Python · pandas · scikit-learn · XGBoost · statsmodels · matplotlib/seaborn
