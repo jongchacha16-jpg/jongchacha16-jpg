@@ -19,11 +19,11 @@
 
 #### 📱 Flutter / Dart
 
+- [flutter_application_1](https://github.com/jongchacha16-jpg/flutter_application_1) — Dart 문법·비동기 첫 학습 기록
 - [flutter_workout](https://github.com/jongchacha16-jpg/flutter_workout) — 운동 기록 앱.
   `go_router` 중첩 라우팅, `shared_preferences` 영속성, `FutureBuilder` 컴포넌트화
 - [flutter-todo-app](https://github.com/jongchacha16-jpg/flutter-todo-app) — 할 일 관리 앱.
   Hive 영속성, 계층 분리 구조, 키워드 기반 카테고리 자동 분류
-- [flutter_application_1](https://github.com/jongchacha16-jpg/flutter_application_1) — Dart 문법·비동기 첫 학습 기록
 
 #### 🛠 Skills
 
