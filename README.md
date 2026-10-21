@@ -6,6 +6,22 @@
 최근에는 그 기준을 과거 작업뿐 아니라 **지금 하는 작업에도 적용**하는 쪽으로 넓히고 있습니다 —
 분석을 서비스로 만들어보고, 개선과 잡음을 구분하는 실험 설계를 먼저 세우는 식으로요.
 
+## 프로젝트
+
+| # | 프로젝트 | 한 줄 요약 | 핵심 스택 | 상세 |
+|---|---|---|---|---|
+| 1 | [**표정 분류 CNN → 이모지 매칭** ↗](https://github.com/jongchacha16-jpg/python-data-portfolio/tree/master/%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8) | 3년 묵은 미완성 과제를 버그 수정·재학습으로 완성, 제로샷 LLM과 성능 비교까지 | TensorFlow/Keras | [노션 ↗](https://topaz-soarer-390.notion.site/3cc28debe9df80848e44ff9232978b7c) |
+| 2 | [**Photo2Emoji 서비스** ↗](https://github.com/jongchacha16-jpg/python-data-portfolio/tree/master/photo2emoji-service) | 위 파이프라인을 `POST /predict` API로 제품화 (pytest 10개·Docker 검증) | FastAPI, Docker | [노션 ↗](https://topaz-soarer-390.notion.site/3ff28debe9df8032a368e18059c584cd) |
+| 3 | [**분산 DB 회의실 예약** ↗](https://github.com/jongchacha16-jpg/python-data-portfolio/tree/master/%EB%B6%84%EC%82%B0%EC%B2%98%EB%A6%AC%EC%8B%9C%EC%8A%A4%ED%85%9C_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8) | MongoDB Replica Set failover 실측 + 보안 감사 2회 | MongoDB, Docker | [노션 ↗](https://topaz-soarer-390.notion.site/3ff28debe9df80f2ac09e4bdb2e648a3) |
+| 4 | [**와인 품질 회귀분석** ↗](https://github.com/jongchacha16-jpg/python-data-portfolio/tree/master/%ED%9A%8C%EA%B7%80%EB%B6%84%EC%84%9D_%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C) | 두 개 트랙 재검증 — 주장·절차 13건 중 12건 정정 | statsmodels | [노션 ↗](https://topaz-soarer-390.notion.site/3cc28debe9df80e5bf7ecbf4ea0437d0) |
+| 5 | [**뇌졸중 발병 예측** ↗](https://github.com/jongchacha16-jpg/python-data-portfolio/tree/master/%EB%8D%B0%EC%82%AC%ED%94%84_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8) | "정확도 95%의 함정"을 불균형 관점으로 재구축 | scikit-learn | [노션 ↗](https://topaz-soarer-390.notion.site/65628debe9df830eb87381195d7f537e) |
+| 6 | [**데이터 직무 연봉 예측** ↗](https://github.com/jongchacha16-jpg/python-data-portfolio/tree/master/MachineLearning_Data_Related_Job_Salary) | 리키지로 알던 변수의 정체를 코드로 규명 | scikit-learn | [노션 ↗](https://topaz-soarer-390.notion.site/85628debe9df82fd959c81bacdb35ed1) |
+| 7 | [**항공사 승객 만족도 예측** ↗](https://github.com/jongchacha16-jpg/airline-satisfaction-prediction) | 0.0005 개선을 잡음과 구분하는 실험 프로토콜 설계 (Kaggle) | LightGBM, Optuna | [노션 ↗](https://topaz-soarer-390.notion.site/40028debe9df8046a90bda5ccb613a72) |
+| 8 | [**Flutter 앱 개발** ↗](https://github.com/jongchacha16-jpg/flutter_workout) | 학습 3단계 — 라우팅·영속성·비동기를 갖춘 운동 기록 앱까지 (저장소 3개) | Flutter, Dart | [노션 ↗](https://topaz-soarer-390.notion.site/3cc28debe9df80d4a98be754d2cf1098) |
+
+> 1~6번은 [python-data-portfolio](https://github.com/jongchacha16-jpg/python-data-portfolio) 안의 폴더이고, 7·8번은 별도 저장소입니다.
+> **처음 보신다면 1·7·3번**을 권합니다.
+
 ---
 
 #### 📊 [python-data-portfolio](https://github.com/jongchacha16-jpg/python-data-portfolio) — 재검증 기록
