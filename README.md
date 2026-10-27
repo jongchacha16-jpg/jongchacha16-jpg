@@ -16,7 +16,7 @@
 | 4 | [**와인 품질 회귀분석** ↗](https://github.com/jongchacha16-jpg/python-data-portfolio/tree/master/%ED%9A%8C%EA%B7%80%EB%B6%84%EC%84%9D_%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C) | 두 개 트랙 재검증 — 주장·절차 13건 중 12건 정정 | statsmodels | [노션 ↗](https://topaz-soarer-390.notion.site/3cc28debe9df80e5bf7ecbf4ea0437d0) |
 | 5 | [**뇌졸중 발병 예측** ↗](https://github.com/jongchacha16-jpg/python-data-portfolio/tree/master/%EB%8D%B0%EC%82%AC%ED%94%84_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8) | "정확도 95%의 함정"을 불균형 관점으로 재구축 | scikit-learn | [노션 ↗](https://topaz-soarer-390.notion.site/65628debe9df830eb87381195d7f537e) |
 | 6 | [**데이터 직무 연봉 예측** ↗](https://github.com/jongchacha16-jpg/python-data-portfolio/tree/master/MachineLearning_Data_Related_Job_Salary) | 리키지로 알던 변수의 정체를 코드로 규명 | scikit-learn | [노션 ↗](https://topaz-soarer-390.notion.site/85628debe9df82fd959c81bacdb35ed1) |
-| 7 | [**항공사 승객 만족도 예측** ↗](https://github.com/jongchacha16-jpg/airline-satisfaction-prediction) | 0.0005 개선을 잡음과 구분하는 실험 프로토콜 설계 (Kaggle) | LightGBM, Optuna | [노션 ↗](https://topaz-soarer-390.notion.site/40028debe9df8046a90bda5ccb613a72) |
+| 7 | [**항공사 승객 만족도 예측** ↗](https://github.com/jongchacha16-jpg/airline-satisfaction-prediction) | 0.0013 개선을 잡음과 구분하는 실험 프로토콜 설계 (Kaggle) | LightGBM, Optuna | [노션 ↗](https://topaz-soarer-390.notion.site/40028debe9df8046a90bda5ccb613a72) |
 | 8 | [**Flutter 앱 개발** ↗](https://github.com/jongchacha16-jpg/flutter_workout) | 학습 3단계 — 라우팅·영속성·비동기를 갖춘 [운동 기록 앱 ↗](https://github.com/jongchacha16-jpg/flutter_workout)과 Hive·계층 분리 구조의 [할 일 앱 ↗](https://github.com/jongchacha16-jpg/flutter-todo-app) (저장소 3개) | Flutter, Dart | [노션 ↗](https://topaz-soarer-390.notion.site/3cc28debe9df80d4a98be754d2cf1098) |
 
 > 1~6번은 [python-data-portfolio](https://github.com/jongchacha16-jpg/python-data-portfolio) 안의 폴더이고, 7·8번은 별도 저장소입니다.
@@ -55,9 +55,10 @@
 
 #### 🔬 [airline-satisfaction-prediction](https://github.com/jongchacha16-jpg/airline-satisfaction-prediction) — 실험 설계
 
-Kaggle Playground S6E10. 목표 개선폭이 0.0005인데 **Fold 간 표준편차가 0.00058**이었습니다.
+Kaggle Playground S6E10. 목표 개선폭이 0.0013인데 **Fold 간 표준편차가 0.00058**이었습니다.
 잡음과 목표의 자릿수가 같아서, 어려운 쪽은 모델링이 아니라
 **"지금 올라간 0.0005가 진짜인가"를 판정하는 일**이었습니다.
+단계별 개선폭 0.0005는 잡음과 거의 1:1입니다.
 
 - 성능을 재기 전에 채택 기준부터 고정 — *"Pooled OOF 개선 且 5개 Fold 중 4개 이상 개선"*
 - 설계한 피처 **4개 중 3개를 기각**. EDA에서 현상이 보여도, 트리가 이미 자력으로 잡고 있으면 기여하지 않습니다
