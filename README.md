@@ -5,6 +5,8 @@
 
 최근에는 그 기준을 과거 작업뿐 아니라 **지금 하는 작업에도 적용**하는 쪽으로 넓히고 있습니다 —
 분석을 서비스로 만들어보고, 개선과 잡음을 구분하는 실험 설계를 먼저 세우는 식으로요.
+가장 최근에는 **제가 방금 만든 RAG 파이프라인**을 같은 방식으로 의심해 봤는데,
+에러 없이 잘 돌던 코드에서 네 가지가 동시에 틀려 있었습니다(9번).
 
 ## 프로젝트
 
@@ -18,8 +20,9 @@
 | 6 | [**데이터 직무 연봉 예측** ↗](https://github.com/jongchacha16-jpg/python-data-portfolio/tree/master/MachineLearning_Data_Related_Job_Salary) | 리키지로 알던 변수의 정체를 코드로 규명 | scikit-learn | [노션 ↗](https://topaz-soarer-390.notion.site/85628debe9df82fd959c81bacdb35ed1) |
 | 7 | [**항공사 승객 만족도 예측** ↗](https://github.com/jongchacha16-jpg/airline-satisfaction-prediction) | 0.0013 개선을 잡음과 구분하는 실험 프로토콜 설계 (Kaggle) | LightGBM, Optuna | [노션 ↗](https://topaz-soarer-390.notion.site/40028debe9df8046a90bda5ccb613a72) |
 | 8 | [**Flutter 앱 개발** ↗](https://github.com/jongchacha16-jpg/flutter_workout) | 학습 3단계 — 라우팅·영속성·비동기를 갖춘 [운동 기록 앱 ↗](https://github.com/jongchacha16-jpg/flutter_workout)과 Hive·계층 분리 구조의 [할 일 앱 ↗](https://github.com/jongchacha16-jpg/flutter-todo-app) (저장소 3개) | Flutter, Dart | [노션 ↗](https://topaz-soarer-390.notion.site/3cc28debe9df80d4a98be754d2cf1098) |
+| 9 | **CS RAG 튜터** (private) | 잘 돌던 RAG을 측정하니 코퍼스에 핵심 개념이 없고 어휘 검색이 작동한 적도 없었음 — 종단 Recall@5 0.694 → 0.903 | FastAPI, pgvector, Langfuse | [노션 ↗](https://topaz-soarer-390.notion.site/42428debe9df8012b2f1f73156ab0fdf) |
 
-> 1~6번은 [python-data-portfolio](https://github.com/jongchacha16-jpg/python-data-portfolio) 안의 폴더이고, 7·8번은 별도 저장소입니다.
+> 1~6번은 [python-data-portfolio](https://github.com/jongchacha16-jpg/python-data-portfolio) 안의 폴더이고, 7·8번은 별도 저장소, 9번은 별도 private 저장소입니다.
 > **처음 보신다면 1·7·3번**을 권합니다.
 
 ---
@@ -90,7 +93,9 @@ OOF AUC 0.95866 → **0.95994**. 목표 0.9600에는 0.00006 미달했고, 그 �
 포트폴리오를 채용 관점에서 스스로 점검해 갭을 정리해 두었고, 순서대로 메우는 중입니다.
 
 - ✅ **서빙·배포 경험** — Photo2Emoji API로 해소
-- ✅ **테스트 문화** — pytest 스위트 도입
-- ⬜ **SQL 기반 분석 프로젝트** — 아직 없습니다. MongoDB가 유일한 DB 경험입니다
-- ⬜ **데이터 수집 경험** — 데이터가 전부 공개 데이터셋(Kaggle/UCI/COCO)입니다
-- ⬜ **CI** — GitHub Actions로 pytest 자동화
+- ✅ **테스트 문화** — pytest 스위트 도입 (CS RAG 튜터는 102개)
+- ✅ **SQL/DB 경험** — CS RAG 튜터에서 Postgres+pgvector로 하이브리드 검색 SQL을 직접 작성.
+  다만 **검색용 SQL이고 분석용 SQL(집계·윈도우 함수)은 아직 없습니다**
+- ✅ **데이터 수집 경험** — CS RAG 튜터에서 MediaWiki API로 206문서 직접 수집.
+  나머지 프로젝트는 여전히 공개 데이터셋입니다
+- ⬜ **CI** — GitHub Actions로 pytest 자동화. 테스트는 이미 있어 붙이기만 하면 되는 상태입니다
